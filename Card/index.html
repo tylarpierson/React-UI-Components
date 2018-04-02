@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <body>
+            <div id="target"></div>
+            <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+            <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+            <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+           
+            <script type="text/babel">
+                const BasicLogo = props => {
+                    return (
+                        <img src="https://ibin.co/3whrpKSBbZ81.png" 
+                        className={`logo`}
+                        />
+                    );
+                };
+
+                const BasicHeadline = props => {
+                    return (
+                        <h5
+                            className={`header`}>Lambda School 
+                        </h5>
+                    );
+                };
+
+                const BasicTag = props => {
+                    return (
+                        <h6
+                        className={`tag`}
+                        >@LambdaSchool</h6>
+                    );
+                };
+
+                const BasicTag2 = props => {
+                    return (
+                        <h6
+                        className={`tag2`}
+                        >26 jan</h6>
+                    );
+                };
+
+                const BasicParagraph = props => {
+                    return (
+                        <p
+                        className={`container`}>
+                        Lets learn React by building simple interfaces with components. Don't try to overthink it, just keep
+                        it simple and have fun. Once you feel comfortable using components you are well on your way to 
+                        mastering React!</p>
+                    );
+                };
+
+                const BasicBanner = props => {
+                    return (
+                        <img 
+                        className={`container card card-img-top banner`}
+                        src="https://ibin.co/3wnC6SgIOJud.png" />
+                    );
+                };
+
+                const BasicBannerHeadline = props => {
+                    return (
+                        <h3
+                        className={`container bannerHeadline`}
+                        >Get started with React</h3>
+                    );
+                };
+
+                const BasicBannerParagraph = props => {
+                    return (
+                        <p
+                        className={`container bannerHeadline`}>
+                        React makes it painless to create interactive UIs. Design simple views for each state in your
+                        application.</p>
+                    );
+                };
+
+                const BasicBannerLink = props => {
+                    return (
+                        <a 
+                        className={`container link`}
+                        href="reactjs.org">reactjs.org</a>
+                    );
+                };
+
+                const App = () => {
+                    return (
+                        <div>
+                        <BasicLogo />
+                        <BasicHeadline />
+                        <BasicTag />
+                        <BasicTag2 />
+                        <BasicParagraph />
+                        <BasicBanner />
+                        <BasicBannerHeadline />
+                        <BasicBannerParagraph />
+                        <BasicBannerLink />
+                        </div>
+                )};
+
+                ReactDOM.render(<App />, document.getElementById('target'));
+        </script>
+    </body>
+</html>
