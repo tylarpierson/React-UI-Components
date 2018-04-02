@@ -14,7 +14,62 @@
         <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
     
         <script type="text/babel">
-            
+         const ResultDisplay = () => {
+  return (
+    <div class='resultDisplay'>
+      <h1>0</h1>
+    </div>  
+  );
+};
+
+const Button = props => {
+  return (<div>
+ <button className={`button-styles ${props.bgColor}`}>{props.text} </button>
+    </div>);
+};
+
+const App = () => {
+  return (
+    <div>
+      <ResultDisplay / >
+
+        <div class = "Buttons">
+          <Button bgColor='bg-button-white' text='clear'/>
+          <Button bgColor='bg-button-red' text='÷'/>
+          </div>
+        
+        <div class = "MiddleButtons">
+          <Button bgColor='bg-numbers-white' text='7'/>
+          <Button bgColor='bg-numbers-white' text='8'/>
+          <Button bgColor='bg-numbers-white' text='9'/>
+          <Button bgColor='bg-button-red' text='X'/>
+    </div>
+        
+        <div class = "MiddleButtons">
+          <Button bgColor='bg-numbers-white' text='4'/>
+          <Button bgColor='bg-numbers-white' text='5'/>
+          <Button bgColor='bg-numbers-white' text='6'/>
+          <Button bgColor='bg-button-red' text='-'/>
+    </div>
+        
+        <div class = "MiddleButtons">
+          <Button bgColor='bg-numbers-white' text='1'/>
+          <Button bgColor='bg-numbers-white' text='2'/>
+          <Button bgColor='bg-numbers-white' text='3'/>
+          <Button bgColor='bg-button-red' text='+'/>
+    </div>
+        
+        <div class = "Buttons">
+          <Button bgColor='bg-button-white' text='0'/>
+          <Button bgColor='bg-button-red' text='='/>
+          </div>
+ </div>
+ 
+)};
+
+ReactDOM.render(<App />, document.getElementById('target'));
+
+            ReactDOM.render(<App />, document.getElementById('target'));
         </script>
     </body>
 </html>

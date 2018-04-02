@@ -1,0 +1,42 @@
+
+.resultDisplay {
+  max-width: 437px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  text-align: end;
+  padding-top: 3px;
+}    
+.button-styles {
+      color: #e3e3e3;
+      background: #222;
+      border: none;
+      padding: 50px 50px;
+ 
+    }
+    .bg-button-red {
+      background: red;
+      color: black;
+      border: 1px black solid;
+    }
+    .bg-button-white {
+      background: white;
+      color: black;
+      border: 1px black solid;
+      width: 328px;
+}
+    .bg-numbers-white {
+      background: white;
+      color: black;
+      border: 1px black solid;
+      
+    }
+
+.Buttons {
+  display: flex;
+}
+
+.MiddleButtons {
+  display: flex;
+}
+
